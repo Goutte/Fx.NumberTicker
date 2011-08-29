@@ -9,16 +9,24 @@ This is like tweening a style value, but instead you tween the content value.
 How to use
 ----------
 
-HTML
+``` html
+<span id="myCounter">0</span>
+```
 
-    <span id="myCounter">0</span>
+``` javascript
+// Create the Ticker like any other Fx
+var ticker = new Fx.Ticker('myCounter');
+ticker.start(0,100);
 
-JS
+// or use shorthand version
+$('myCounter').ticker(100);
 
-    // Create the Ticker like any other Fx
-    var ticker = new Fx.Ticker('myCounter');
-    ticker.start(0,100);
-
-    // or use shorthand version
-    // $('myCounter').ticker(100);
-
+// also, you can provide all of Fx options, plus a transformer function :
+$('myCounter').ticker(100, {
+    duration: 5000,
+    transformer: function(i) {
+        // Prefix with zeroes so we have a 5 digits number
+        return (Array(5).join('0') + i).slice(-5);
+    }
+});
+```

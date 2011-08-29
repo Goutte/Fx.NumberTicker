@@ -10,13 +10,13 @@ How to use
 ----------
 
 HTML
-  <span id="myCounter">0</span>
+    <span id="myCounter">0</span>
 
 JS
-  // Create the Ticker like any other Fx
-  var ticker = new Fx.Ticker('myCounter');
-  ticker.start(0,100);
+    // Create the Ticker like any other Fx
+    var ticker = new Fx.Ticker('myCounter');
+    ticker.start(0,100);
 
-  // or use shorthand version
-  // $('myCounter').ticker(100);
+    // or use shorthand version
+    // $('myCounter').ticker(100);
 

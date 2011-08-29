@@ -34,3 +34,8 @@ $('myCounter').ticker(100, {
     }
 });
 ```
+
+Demo
+----
+
+http://jsfiddle.net/goutte/K6R8k/

@@ -4,7 +4,7 @@ Fx.Ticker
 Make a number in the innerText of a DOM Element smoothly change from one value to another.
 This is like tweening a style value, but instead you tween the content value.
 
-![Screenshot](http://url_to_project_screenshot)
+![Screenshot](http://github.com/Goutte/Fx.Ticker/raw/master/Docs/fx-ticker.png)
 
 How to use
 ----------

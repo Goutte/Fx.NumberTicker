@@ -10,9 +10,11 @@ How to use
 ----------
 
 HTML
+
     <span id="myCounter">0</span>
 
 JS
+
     // Create the Ticker like any other Fx
     var ticker = new Fx.Ticker('myCounter');
     ticker.start(0,100);

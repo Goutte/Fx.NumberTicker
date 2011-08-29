@@ -10,12 +10,18 @@ You may also provide a transformation function in the options, which is useful f
 or simulating float values for example.
 
 
+
 How to use
 ----------
+
+HTML
 
 ``` html
 <span id="myCounter">0</span>
 ```
+
+
+JAVASCRIPT
 
 ``` javascript
 // Create the Ticker like any other Fx
@@ -25,7 +31,7 @@ ticker.start(0,100);
 // or use shorthand version
 $('myCounter').ticker(100);
 
-// also, you can provide all of Fx options, plus a transformer function :
+// also, you can provide any of Fx options, plus a transformer function :
 $('myCounter').ticker(100, {
     duration: 5000,
     transformer: function(i) {
@@ -35,7 +41,15 @@ $('myCounter').ticker(100, {
 });
 ```
 
+
+
 Demo
 ----
 
 http://jsfiddle.net/goutte/K6R8k/
+
+
+Thanks
+------
+
+FOSS lovers everywhere <3

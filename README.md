@@ -1,10 +1,14 @@
 Fx.Ticker
 =========
 
-Make a number in the innerText of a DOM Element smoothly change from one value to another.
-This is like tweening a style value, but instead you tween the content value.
+![Logo](http://github.com/Goutte/Fx.Ticker/raw/master/Docs/fx-ticker.png)
 
-![Screenshot](http://github.com/Goutte/Fx.Ticker/raw/master/Docs/fx-ticker.png)
+Make a number in the innerText of a DOM Element smoothly change from one value to another.
+This is like tweening a style value, but instead you tween the html content integer value.
+
+You may also provide a transformation function in the options, which is useful for prepending zeroes
+or simulating float values for example.
+
 
 How to use
 ----------

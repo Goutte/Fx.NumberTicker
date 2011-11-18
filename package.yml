@@ -1,7 +1,9 @@
-name: Fx.Ticker
+name: Fx.Number
 author: LaGoutte
 category: Effects
 tags:
+  - fx
+  - number
   - ticker
   - animation
   - tween

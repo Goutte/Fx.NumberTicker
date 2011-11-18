@@ -1,7 +1,7 @@
 Fx.Ticker
 =========
 
-![Logo](http://github.com/Goutte/Fx.Ticker/raw/master/Docs/fx-ticker.png)
+![Logo](http://github.com/Goutte/Fx.NumberTicker/raw/master/Docs/fx-numberTicker.png)
 
 Make a number in the innerText of a DOM Element smoothly change from one value to another.
 This is like tweening a style value, but instead you tween the html content integer value.
@@ -25,14 +25,14 @@ JAVASCRIPT
 
 ``` javascript
 // Create the Ticker like any other Fx
-var ticker = new Fx.Ticker('myCounter');
-ticker.start(0,100);
+var numberTicker = new Fx.NumberTicker('myCounter');
+numberTicker.start(0,100);
 
 // or use shorthand version
-$('myCounter').ticker(100);
+$('myCounter').numberTicker(100);
 
 // also, you can provide any of Fx options, plus a transformer function :
-$('myCounter').ticker(100, {
+$('myCounter').numberTicker(100, {
     duration: 5000,
     transformer: function(i) {
         // Prefix with zeroes so we have a 5 digits number

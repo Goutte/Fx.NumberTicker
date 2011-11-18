@@ -10,18 +10,18 @@ demo:
   - http://jsfiddle.net/goutte/K6R8k/
 
 licence:
-  - free speech
+  - libre
 
 requires:
   - Fx
 
 provides:
-  - Fx.Ticker
-  - Element.ticker
+  - Fx.NumberTicker
+  - Element.numberTicker
 
 ...
 */
-Fx.Ticker = new Class({
+Fx.NumberTicker = new Class({
 
   Extends: Fx,
 
@@ -56,21 +56,21 @@ Fx.Ticker = new Class({
 });
 
 
-Element.Properties.ticker = {
+Element.Properties.numberTicker = {
 
 	set: function(options){
-		var ticker = this.retrieve('ticker');
-		if (ticker) ticker.destroy();
-		return this.eliminate('ticker').store('ticker:options', options);
+		var numberTicker = this.retrieve('numberTicker');
+		if (numberTicker) numberTicker.destroy();
+		return this.eliminate('numberTicker').store('numberTicker:options', options);
 	},
 
 	get: function(){
-		var ticker = this.retrieve('ticker');
-		if (!ticker){
-			ticker = new Fx.Ticker(this, this.retrieve('ticker:options'));
-			this.store('ticker', ticker);
+		var numberTicker = this.retrieve('numberTicker');
+		if (!numberTicker){
+			numberTicker = new Fx.NumberTicker(this, this.retrieve('numberTicker:options'));
+			this.store('numberTicker', numberTicker);
 		}
-		return ticker;
+		return numberTicker;
 	}
 
 };
@@ -78,9 +78,9 @@ Element.Properties.ticker = {
 
 Element.implement({
 
-	ticker: function(to, options){
-		if (options) this.set('ticker', options);
-		this.get('ticker').start(to);
+	numberTicker: function(to, options){
+		if (options) this.set('numberTicker', options);
+		this.get('numberTicker').start(to);
 		return this;
 	}
 
